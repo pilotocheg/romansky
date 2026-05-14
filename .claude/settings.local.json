@@ -2,7 +2,29 @@
   "permissions": {
     "allow": [
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
-      "Bash(mv SPEC.md /tmp/SPEC.md && npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes 2>&1)"
+      "Bash(mv SPEC.md /tmp/SPEC.md && npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes 2>&1)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"about: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1583073682923-a5b91e640893?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"gallery4: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"gallery5: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1492011221367-f46d374b5a93?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"gallery7: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"gallery8: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"g1 1436491865332-7a61a109cc05: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"g2 1474302770737-173ee21bab96: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1474302770737-173ee21bab96?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"g3 1571208506991-ee6f04e6de32: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1571208506991-ee6f04e6de32?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"g4 1609342122563-a43ac8917a3a: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"c1 1544191696: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"c2 1520437358: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1520437358207-323b43b50729?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"c3 1529074963: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"c4 1534777310: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1534777310851-88fd7f2ec37a?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"c5 1548613053: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1548613053-22087dd8edb8?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"d1 1421784304: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1421784304312-b5f1c5d0ada3?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"d2 1474978558: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1474978558046-a2485c4e2f34?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"d3 1453575906: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1453575906151-b8e1db9b6ba6?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"d4 1477959058: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1477959058580-851b4093adde?w=100&q=10\")",
+      "Bash(curl -s -o /dev/null -w \"d5 1578570220: %{http_code}\\\\n\" \"https://images.unsplash.com/photo-1578570220322-a769e8e14fb1?w=100&q=10\")"
     ],
     "additionalDirectories": [
       "/tmp"
