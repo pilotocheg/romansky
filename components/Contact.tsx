@@ -7,17 +7,17 @@ const info = [
   {
     icon: MapPin,
     label: "Adres",
-    value: "Lotnisko Piła (EPPI)\nul. Lotnicza 1\n64-920 Piła",
+    value: "Lotnisko Piła (EPPI)\nul. Lotnicza 12\n64-920 Piła",
   },
   {
     icon: Phone,
     label: "Telefon",
-    value: "+48 XXX XXX XXX",
+    value: "+48 512 187 280",
   },
   {
     icon: Mail,
     label: "E-mail",
-    value: "info@romansky.pl",
+    value: "romansky@wp.pl",
   },
   {
     icon: Clock,
@@ -36,7 +36,7 @@ export default function Contact() {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      const res = await fetch("https://formspree.io/f/{FORM_ID}", {
+      const res = await fetch("https://formspree.io/f/xlgvdqry", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
@@ -123,7 +123,9 @@ export default function Contact() {
                     className="block text-charcoal text-sm font-medium mb-1.5"
                   >
                     Telefon{" "}
-                    <span className="text-muted font-normal">(opcjonalnie)</span>
+                    <span className="text-muted font-normal">
+                      (opcjonalnie)
+                    </span>
                   </label>
                   <input
                     id="phone"
@@ -148,7 +150,7 @@ export default function Contact() {
                     className="w-full border border-divider px-4 py-3 text-charcoal text-sm focus:outline-none focus:border-brand-sky transition-colors bg-white"
                   >
                     <option value="">Wybierz temat…</option>
-                    <option value="Szkolenie">Szkolenie lotnicze (UL PPL)</option>
+                    <option value="Szkolenie">Szkolenie lotnicze</option>
                     <option value="Wynajem">Wynajem samolotu</option>
                     <option value="Lot zapoznawczy">Lot zapoznawczy</option>
                     <option value="Inne">Inne</option>
@@ -189,7 +191,12 @@ export default function Contact() {
 
                 <p className="text-muted text-xs text-center">
                   Przesyłając formularz, akceptujesz naszą{" "}
-                  <a href="#" className="text-brand-sky underline">
+                  <a
+                    href="/polityka-prywatnosci"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-sky underline"
+                  >
                     Politykę prywatności
                   </a>
                   . Twoje dane nie będą udostępniane osobom trzecim.
@@ -215,11 +222,17 @@ export default function Contact() {
               </div>
             ))}
 
-            <div className="border border-divider bg-divider h-52 flex items-center justify-center mt-4">
-              <p className="text-muted text-sm text-center px-4">
-                Mapa Google pojawi się tutaj po<br />
-                potwierdzeniu dokładnego adresu.
-              </p>
+            <div className="mt-4 border border-divider overflow-hidden">
+              <iframe
+                title="Lokalizacja szkoły lotniczej RomanSky na Lotnisku Piła"
+                src="https://maps.google.com/maps?q=Lotnisko+Pi%C5%82a+EPPI+ul+Lotnicza+12+Pi%C5%82a&z=14&output=embed"
+                width="100%"
+                height="240"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="block"
+              />
             </div>
           </div>
         </div>

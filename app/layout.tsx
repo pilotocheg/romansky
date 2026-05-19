@@ -14,29 +14,38 @@ const BASE_URL = "https://romansky.pl";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default:
-      "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
+    default: "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
     template: "%s | RomanSky Aviation",
   },
   description:
-    "Szkolenie lotnicze na pilota ultralight (UL PPL) oraz wynajem samolotu Allegro 2000 w Pile (lotnisko EPPI). Certyfikowany instruktor Roman Jałowiecki. Lot zapoznawczy dostępny. Szkolenie ultralajtem w Wielkopolsce.",
+    "Szkolenie lotnicze do licencji pilota ULL (program czeski) oraz wynajem samolotu Allegro 2000 w Pile (lotnisko EPPI). Certyfikowany instruktor Roman Jałowiecki. Lot zapoznawczy dostępny. Szkolenie ultralajtem w Wielkopolsce.",
   keywords: [
     "szkolenie lotnicze",
     "szkolenie lotnicze Piła",
     "szkolenie ultralajtem",
     "szkolenie ultralajtem Piła",
-    "lot samolotem",
-    "lot samolotem Piła",
     "pilot ultralight",
     "kurs pilota ultralight",
+    "licencja ULL",
     "licencja pilota ultralight",
-    "UL PPL",
-    "świadectwo kwalifikacji pilota",
+    "ULL pilot",
+    "program czeski ULL",
+    "LAA ČR",
+    "LAPL",
+    "LAPL(A)",
+    "licencja LAPL",
+    "szkolenie LAPL",
+    "PPL",
+    "PPL(A)",
+    "licencja PPL",
+    "szkolenie PPL",
+    "kurs PPL Piła",
+    "kurs LAPL Piła",
     "nauka latania",
     "nauka latania Piła",
     "szkoła lotnicza",
     "szkoła lotnicza Piła",
-    "szkolenie lotnicze Wielkopolska",
+    "szkolenie lotnicze Wielkopolskie",
     "lot zapoznawczy",
     "lot zapoznawczy Piła",
     "wynajem samolotu",
@@ -63,7 +72,7 @@ export const metadata: Metadata = {
     siteName: "RomanSky Aviation",
     title: "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
     description:
-      "Szkolenie na pilota ultralight i wynajem samolotu Allegro 2000 na lotnisku Piła (EPPI). Od 2010 roku. Certyfikowany instruktor. Zarezerwuj lot zapoznawczy!",
+      "Szkolenie do licencji pilota ULL (program czeski) i wynajem samolotu Allegro 2000 na lotnisku Piła (EPPI). Od 2015 roku. Certyfikowany instruktor. Zarezerwuj lot zapoznawczy!",
     images: [
       {
         url: "/og-image.jpg",
@@ -77,7 +86,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RomanSky Aviation — Szkolenie Lotnicze | Piła",
     description:
-      "Szkolenie lotnicze, pilot ultralight, wynajem samolotu w Pile. Zarezerwuj lot zapoznawczy!",
+      "Szkolenie do licencji ULL, lot ultralajtem, wynajem Allegro 2000 w Pile. Zarezerwuj lot zapoznawczy!",
     images: ["/og-image.jpg"],
   },
   robots: {

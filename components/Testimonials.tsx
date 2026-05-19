@@ -1,23 +1,32 @@
 import { Star } from "lucide-react";
+import Avatar from "./Avatar";
 
-const testimonials = [
+type Testimonial = {
+  quote: string;
+  name: string;
+  license: string;
+  avatarUrl?: string;
+};
+
+const testimonials: Testimonial[] = [
   {
     quote:
-      "Zaczynałem bez żadnego doświadczenia lotniczego, a Roman sprawił, że każda lekcja była bezpieczna i przystępna. Licencję UL PPL zdobyłem w 4 miesiące — polecam każdemu!",
-    name: "Michał K.",
-    license: "UL PPL, 2023",
+      "Od szkolenia z Romanem mam tylko pozytywne wrażenia. Roman jest bardzo profesjonalny pilot i świetny instruktor. Osobno chcę podkreślić samolot Allegro 2000 - który jest świetnym i biezpiecznym samolotem dla początkujących pilotów.",
+    name: "Viacheslav Dmytriiev",
+    license: "ULL, 2025",
+    avatarUrl: "/images/testimony-1-avatar.jpeg",
   },
   {
     quote:
       "Allegro 2000 to świetna maszyna, a szkolenie z Romanem stoi na najwyższym poziomie. Atmosfera na lotnisku w Pile jest bardzo profesjonalna, a jednocześnie przyjazna.",
-    name: "Agnieszka W.",
-    license: "UL PPL, 2022",
+    name: "Agata",
+    license: "ULL, 2020",
   },
   {
     quote:
       "Zapisałem się na lot zapoznawczy z ciekawości i skończyłem na pełnym kursie. Pasja Romana do latania jest naprawdę zaraźliwa. Gorąco polecam szkolenie w RomanSky!",
-    name: "Tomasz R.",
-    license: "UL PPL, 2024",
+    name: "Przemysław K.",
+    license: "ULL, 2016",
   },
 ];
 
@@ -54,9 +63,14 @@ export default function Testimonials() {
               <blockquote className="text-muted text-base leading-relaxed flex-1 mb-6">
                 &bdquo;{t.quote}&rdquo;
               </blockquote>
-              <div className="border-t border-divider pt-4">
-                <p className="text-charcoal font-semibold text-sm">{t.name}</p>
-                <p className="text-muted text-xs mt-0.5">{t.license}</p>
+              <div className="border-t border-divider pt-4 flex items-center gap-3">
+                <Avatar name={t.name} avatarUrl={t.avatarUrl} />
+                <div>
+                  <p className="text-charcoal font-semibold text-sm">
+                    {t.name}
+                  </p>
+                  <p className="text-muted text-xs mt-0.5">{t.license}</p>
+                </div>
               </div>
             </div>
           ))}

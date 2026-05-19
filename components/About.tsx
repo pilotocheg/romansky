@@ -1,11 +1,7 @@
 import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 
-const badges = [
-  "Certyfikowany Instruktor EASA",
-  "Urząd Lotnictwa Cywilnego (ÚCL)",
-  "Członek LAA ČR",
-];
+const badges = ["Certyfikowany Instruktor Lotniczy", "Program czeski – LAA ČR"];
 
 export default function About() {
   return (
@@ -17,25 +13,26 @@ export default function About() {
               Nasza historia
             </span>
             <h2 className="text-charcoal font-bold text-4xl md:text-5xl leading-tight mb-6">
-              Szkoła lotnicza<br />RomanSky w Pile
+              Szkoła lotnicza
+              <br />
+              RomanSky w Pile
             </h2>
             <p className="text-muted text-base leading-relaxed mb-4">
-              Szkoła lotnicza RomanSky działa od 2010 roku. Założył ją Roman
-              Jałowiecki — certyfikowany instruktor lotniczy z wieloletnim
-              doświadczeniem w szkoleniu pilotów ultralight. Działamy na
-              Lotnisku Piła (EPPI) w Wielkopolsce.
+              Szkoła lotnicza RomanSky działa od 2015 roku i mieści się na
+              Lotnisku Piła (EPPI) w Wielkopolsce. Prowadzi ją Roman Jałowiecki
+              — certyfikowany instruktor-pilot z całkowitym nalotem ponad 1000
+              godzin na różnych typach statków powietrznych, w tym szybowcach.
             </p>
             <p className="text-muted text-base leading-relaxed mb-4">
-              Szkolenie lotnicze prowadzimy w przyjaznej, bezpiecznej atmosferze
-              — zarówno dla zupełnych początkujących, jak i pilotów chcących
-              doskonalić umiejętności. Nasz kurs na pilota ultralight prowadzi do
-              uzyskania świadectwa kwalifikacji UL PPL.
+              Prowadzimy szkolenia do czeskiej Licencji Pilota Samolotów
+              Ultralekkich (ULL) według programu LAA ČR. Przyjmujemy zupełnych
+              początkujących — wystarczy chęć latania i podstawowe orzeczenie
+              lotniczo-lekarskie.
             </p>
             <p className="text-muted text-base leading-relaxed mb-8">
-              Dysponujemy starannie utrzymanym samolotem Allegro 2000, który
-              oferujemy zarówno w ramach szkolenia, jak i do wynajmu dla
-              licencjonowanych pilotów. Piła i okolice Wielkopolski to idealne
-              tereny do latania.
+              W ofercie mamy również szkolenia doskonalące i uzupełniające,
+              wynajem samolotu oraz loty zapoznawcze — idealny prezent lub
+              pierwszy krok w stronę licencji pilota.
             </p>
 
             <div className="flex flex-wrap gap-3">

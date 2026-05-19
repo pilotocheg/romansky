@@ -36,7 +36,9 @@ export default function Nav() {
           onClick={close}
         >
           <Plane className="text-brand-sky" size={22} />
-          RomanSky
+          <span>
+            Roman<span className="text-brand-sky">Sky</span>
+          </span>
         </a>
 
         {/* Desktop nav */}

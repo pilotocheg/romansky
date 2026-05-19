@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Godzin w powietrzu" },
-  { value: 80, suffix: "+", label: "Wyszkolonych pilotów" },
-  { value: 2, suffix: "", label: "Samoloty w flocie" },
-  { value: 15, suffix: "+", label: "Lat doświadczenia" },
+  { value: 1000, suffix: "+", label: "Godzin w powietrzu" },
+  { value: 20, suffix: "+", label: "Wyszkolonych pilotów" },
+  { value: 1, suffix: "", label: "Samolot w flocie" },
+  { value: 11, suffix: "+", label: "Lat doświadczenia" },
 ];
 
 function CountUp({
@@ -58,7 +58,7 @@ export default function StatsBar() {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();

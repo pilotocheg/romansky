@@ -18,19 +18,21 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 w-full pt-16">
         <div className="max-w-xl">
           <span className="inline-block text-brand-sky text-sm font-semibold tracking-widest uppercase mb-4">
-            Lotnisko Piła (EPPI) · Wielkopolska
+            Lotnisko Piła (EPPI) · Wielkopolskie
           </span>
           <h1 className="text-white font-bold leading-tight mb-6 text-5xl md:text-6xl lg:text-7xl">
-            Szkolenie<br />
-            lotnicze<br />
-            w Pile
+            Szkolenie
+            <br />
+            lotnicze
+            <br />w Pile
           </h1>
           <p className="text-white/80 text-lg md:text-xl mb-4 leading-relaxed">
-            Kurs pilota ultralight (UL PPL) i wynajem samolotu<br className="hidden sm:block" />
-            Allegro 2000 na Lotnisku Piła. Od 2010 roku.
+            Szkolenie do licencji ULL i wynajem samolotu
+            <br className="hidden sm:block" />
+            Allegro 2000 na Lotnisku Piła. Od 2015 roku.
           </p>
           <p className="text-brand-sky text-sm font-medium mb-10">
-            Szkolenie ultralajtem · Lot zapoznawczy · Wynajem samolotu
+            Licencja ULL · Lot zapoznawczy · Wynajem samolotu
           </p>
           <div className="flex flex-wrap gap-4">
             <a

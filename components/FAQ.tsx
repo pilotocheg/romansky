@@ -6,15 +6,15 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "Czy potrzebuję wcześniejszego doświadczenia, żeby zacząć szkolenie lotnicze?",
-    a: "Nie, wcześniejsze doświadczenie nie jest wymagane. Przyjmujemy kompletnych początkujących. Przed pierwszą lekcją latania wykonasz krótką samoocenę zdrowotną oraz wstępne zajęcia teoretyczne z Romanem.",
+    a: "Nie, wcześniejsze doświadczenie nie jest wymagane. Przyjmujemy kompletnych początkujących.",
   },
   {
     q: "Jak długo trwa uzyskanie świadectwa kwalifikacji pilota ultralight (UL PPL)?",
-    a: "Większość kursantów uzyskuje licencję pilota w ciągu 3–6 miesięcy, w zależności od częstotliwości lekcji i warunków pogodowych. Minimum to 30 godzin lotu (z instruktorem i solo) oraz zdanie egzaminu teoretycznego z 9 modułów.",
+    a: "Większość kursantów uzyskuje licencję pilota w ciągu 2–4 miesięcy, w zależności od częstotliwości zajęć i warunków pogodowych. Minimum to 20 godzin lotu (z instruktorem i solo) oraz zdanie egzaminów teoretycznego i praktycznego.",
   },
   {
     q: "Jakie badania lekarskie są wymagane do kursu pilota ultralight?",
-    a: "Do świadectwa kwalifikacji UL PPL wymagana jest klasa 2 LAPL lub samoocena zdrowotna, w zależności od indywidualnej sytuacji. Przed rozpoczęciem szkolenia otrzymasz pełną informację o tym, jaką drogę wybrać.",
+    a: "Do świadectwa kwalifikacji UL PPL wymagana jest co najmniej klasa 2 LAPL zgodnie z EASA. Okazujemy wsparcie w uzyskaniu takiego orzeczenia.",
   },
   {
     q: "Czy mogę wynająć samolot, posiadając licencję wydaną w innym kraju?",

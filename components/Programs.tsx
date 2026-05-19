@@ -2,11 +2,20 @@ import { Plane, CheckCircle2, Rocket } from "lucide-react";
 
 const details = [
   { label: "Minimalny wiek", value: "16 lat" },
-  { label: "Badania lotnicze", value: "Klasa 2 LAPL (możliwa samoocena)" },
-  { label: "Egzamin teoretyczny", value: "9 modułów tematycznych, ÚCL / LAA ČR" },
-  { label: "Minimalna liczba godzin lotu", value: "30 godz. (z instruktorem + solo)" },
-  { label: "Egzamin praktyczny", value: "Sprawdzian umiejętności z egzaminatorem" },
-  { label: "Dozwolone statki powietrzne", value: "Ultralekkies do 600 kg MTOW, 2 miejsca" },
+  {
+    label: "Badania lotniczo-lekarskie",
+    value: "Ważne orzeczenie do szkolenia UL",
+  },
+  { label: "Zaświadczenie", value: "O ukończeniu szkolenia lotniczego" },
+  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
+  {
+    label: "Egzamin",
+    value: "Opłata pobierana bezpośrednio przez inspektora czeskiego",
+  },
+  {
+    label: "Uznanie licencji",
+    value: "Czechy i szereg krajów europejskich, w tym w Polsce",
+  },
 ];
 
 export default function Programs() {
@@ -18,12 +27,13 @@ export default function Programs() {
             Szkolenie lotnicze
           </span>
           <h2 className="text-charcoal font-bold text-4xl md:text-5xl leading-tight mb-4">
-            Zacznij swoją przygodę<br />z lataniem
+            Zacznij swoją przygodę
+            <br />z lataniem
           </h2>
           <p className="text-muted text-base leading-relaxed">
-            Prowadzimy szkolenie lotnicze prowadzące do uzyskania świadectwa
-            kwalifikacji pilota ultralekkiego statku powietrznego — wydawanego
-            przez Urząd Lotnictwa Cywilnego (ÚCL) za pośrednictwem LAA ČR.
+            Prowadzimy szkolenie do czeskiej Licencji Pilota Samolotów
+            Ultralekkich (ULL) według programu LAA ČR. Brak wcześniejszego
+            doświadczenia nie jest przeszkodą.
           </p>
         </div>
 
@@ -33,22 +43,25 @@ export default function Programs() {
               <Plane size={28} />
             </div>
             <div>
-              <h3 className="text-charcoal font-bold text-2xl mb-1">
-                Świadectwo Kwalifikacji Pilota Ultralekkiego (UL PPL)
+              <span className="text-brand-sky text-xs font-semibold tracking-widest uppercase">
+                Program czeski
+              </span>
+              <h3 className="text-charcoal font-bold text-2xl mt-0.5">
+                Licencja Pilota ULL
               </h3>
-              <p className="text-muted text-sm">
-                Wydane przez Urząd Lotnictwa Cywilnego (ÚCL) · LAA ČR
+              <p className="text-muted text-sm mt-1">
+                Licencja Pilota Samolotów Ultralekkich
               </p>
+              <p className="text-muted text-xs mt-0.5">ÚCL / LAA ČR</p>
             </div>
           </div>
 
           <p className="text-muted text-base leading-relaxed mb-6">
-            Licencja pilota ultralight uprawnia do samodzielnych lotów
-            dwumiejscowymi ultralajty w dozwolonych przestrzeniach powietrznych.
-            Szkolenie łączy teorię z praktycznymi lotami z instruktorem oraz
-            lotami solo, zakończonymi egzaminem praktycznym. Brak wcześniejszego
-            doświadczenia lotniczego nie jest przeszkodą — wystarczy chęć latania
-            i podstawowe badania lekarskie.
+            Czeska licencja pilota ultralajtu uprawnia do samodzielnych lotów
+            dwumiejscowymi ultralajty. Szkolenie łączy teorię z lotami z
+            instruktorem i lotami solo, zakończonymi egzaminem przed inspektorem
+            czeskim. Licencja uznawana w Czechach oraz w szeregu krajów
+            europejskich — w tym w Polsce.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-3 mb-8">

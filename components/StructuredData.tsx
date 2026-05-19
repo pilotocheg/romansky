@@ -8,11 +8,11 @@ export default function StructuredData() {
         name: "RomanSky Aviation",
         alternateName: ["RomanSky", "Szkoła Lotnicza RomanSky"],
         description:
-          "Szkolenie lotnicze na pilota ultralight (UL PPL) oraz wynajem samolotu Allegro 2000 w Pile. Certyfikowany instruktor Roman Jałowiecki. Szkolenie ultralajtem w Wielkopolsce od 2010 roku.",
+          "Szkolenie lotnicze do licencji pilota ULL (program czeski LAA ČR) oraz wynajem samolotu Allegro 2000 w Pile. Certyfikowany instruktor Roman Jałowiecki. Szkolenie ultralajtem w Wielkopolsce od 2015 roku.",
         url: "https://romansky.pl",
-        telephone: "+48XXXXXXXXX",
-        email: "info@romansky.pl",
-        foundingDate: "2010",
+        telephone: "+48512187280",
+        email: "romansky@wp.pl",
+        foundingDate: "2015",
         founder: {
           "@type": "Person",
           name: "Roman Jałowiecki",
@@ -20,10 +20,10 @@ export default function StructuredData() {
         },
         address: {
           "@type": "PostalAddress",
-          streetAddress: "ul. Lotnicza 1",
+          streetAddress: "ul. Lotnicza 12",
           addressLocality: "Piła",
           postalCode: "64-920",
-          addressRegion: "Wielkopolska",
+          addressRegion: "Wielkopolskie",
           addressCountry: "PL",
         },
         geo: {
@@ -33,7 +33,7 @@ export default function StructuredData() {
         },
         hasMap: "https://maps.google.com/?q=Lotnisko+Piła+EPPI",
         openingHours: "Mo-Sa 08:00-18:00",
-        priceRange: "500 PLN/godz.",
+        priceRange: "400 PLN/godz.",
         currenciesAccepted: "PLN",
         paymentAccepted: "Gotówka, Przelew",
         areaServed: [
@@ -43,7 +43,7 @@ export default function StructuredData() {
           },
           {
             "@type": "AdministrativeArea",
-            name: "Wielkopolska",
+            name: "Wielkopolskie",
           },
           {
             "@type": "Country",
@@ -66,24 +66,22 @@ export default function StructuredData() {
             {
               "@type": "Offer",
               "@id": "https://romansky.pl/#offer-szkolenie",
-              name: "Szkolenie Lotnicze UL PPL",
+              name: "Szkolenie Lotnicze do Licencji ULL (program czeski)",
               description:
-                "Kurs na świadectwo kwalifikacji pilota ultralajtu. Szkolenie lotnicze prowadzone przez certyfikowanego instruktora w Pile.",
+                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin u inspektora czeskiego opłacany oddzielnie.",
               url: "https://romansky.pl/#programs",
               category: "Szkolenie lotnicze",
-              eligibleRegion: {
-                "@type": "Country",
-                name: "Polska",
-              },
+              price: "14000",
+              priceCurrency: "PLN",
             },
             {
               "@type": "Offer",
               "@id": "https://romansky.pl/#offer-wynajem",
               name: "Wynajem Samolotu Allegro 2000",
               description:
-                "Wynajem ultralajtu Allegro 2000 dla posiadaczy licencji UL PPL w Pile.",
+                "Wynajem ultralajtu Allegro 2000 dla posiadaczy licencji ULL lub równoważnej w Pile.",
               url: "https://romansky.pl/#fleet",
-              price: "500",
+              price: "400",
               priceCurrency: "PLN",
               unitText: "godz.",
             },
@@ -99,10 +97,7 @@ export default function StructuredData() {
         },
         image: "https://romansky.pl/og-image.jpg",
         logo: "https://romansky.pl/og-image.jpg",
-        sameAs: [
-          "https://www.facebook.com/romansky",
-          "https://www.instagram.com/romansky",
-        ],
+        sameAs: ["https://www.facebook.com/profile.php?id=100048673526562"],
       },
       {
         "@type": "WebSite",
@@ -140,15 +135,15 @@ export default function StructuredData() {
             name: "Ile kosztuje szkolenie na pilota ultralight?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Koszt szkolenia zależy od indywidualnego tempa nauki i liczby godzin. Wynajem samolotu Allegro 2000 kosztuje 500 zł/godz. Skontaktuj się z nami, aby omówić indywidualną wycenę całego kursu.",
+              text: "Szkolenie do licencji ULL (program czeski) kosztuje 14 000 zł — obejmuje teorię i praktykę. Koszt egzaminu jest pobierany oddzielnie przez inspektora czeskiego. Wynajem samolotu Allegro 2000 kosztuje 400 zł/godz.",
             },
           },
           {
             "@type": "Question",
-            name: "Jak długo trwa uzyskanie licencji pilota ultralight (UL PPL)?",
+            name: "Jak długo trwa uzyskanie licencji pilota ULL?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Większość kursantów uzyskuje licencję w ciągu 3–6 miesięcy, w zależności od częstotliwości lekcji i warunków pogodowych. Minimum to 30 godzin lotu (z instruktorem i solo) oraz zdanie egzaminu teoretycznego z 9 modułów.",
+              text: "Większość kursantów uzyskuje licencję w ciągu 3–6 miesięcy, w zależności od częstotliwości lekcji i warunków pogodowych. Program czeski LAA ČR obejmuje część teoretyczną i praktyczną zakończoną egzaminem przed inspektorem czeskim.",
             },
           },
         ],

@@ -1,13 +1,26 @@
 import Image from "next/image";
-import { Gauge, Zap, Users, Weight, Fuel, Clock } from "lucide-react";
+import {
+  Gauge,
+  Zap,
+  Users,
+  Weight,
+  Fuel,
+  Clock,
+  OctagonAlert,
+} from "lucide-react";
 
 const specs = [
-  { icon: Zap, label: "Silnik", value: "Rotax 912 ULS — 100 KM" },
-  { icon: Gauge, label: "Prędkość przelotowa", value: "~175 km/h" },
+  { icon: Zap, label: "Silnik", value: "Rotax 912 UL — 80 KM" },
+  { icon: Gauge, label: "Prędkość przelotowa", value: "140-150 km/h" },
   { icon: Fuel, label: "Zasięg", value: "~750 km" },
   { icon: Weight, label: "Maksymalna masa startowa", value: "472,5 kg" },
-  { icon: Users, label: "Miejsca", value: "2 (obok siebie)" },
-  { icon: Clock, label: "Cena wynajmu", value: "500 zł / godz." },
+  { icon: Users, label: "Miejsca", value: "2 (pilot i pasażer)" },
+  {
+    icon: OctagonAlert,
+    label: "Biezpieczeństwo",
+    value: "Ma wbudowany spadochron",
+  },
+  { icon: Clock, label: "Cena wynajmu", value: "400 zł / godz." },
 ];
 
 export default function Fleet() {
@@ -85,8 +98,7 @@ export default function Fleet() {
             <div className="mt-6 pt-6 border-t border-divider">
               <p className="text-muted text-xs mb-4">
                 <strong className="text-charcoal">Wymagania:</strong> Ważna
-                licencja UL PPL lub równoważna + oblatanie na typie z
-                instruktorem.
+                licencja ULL lub równoważna + oblatanie na typie z instruktorem.
               </p>
               <a
                 href="#contact"
