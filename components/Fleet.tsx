@@ -43,7 +43,7 @@ export default function Fleet() {
         <div className="grid md:grid-cols-2 gap-0 border border-divider shadow-sm overflow-hidden max-w-4xl mx-auto">
           <div className="relative h-72 md:h-auto min-h-72">
             <Image
-              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
+              src="/images/fleet.jpeg"
               alt="Samolot Allegro 2000 do wynajmu na lotnisku w Pile"
               fill
               className="object-cover"

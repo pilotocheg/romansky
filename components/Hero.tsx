@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center">
       <Image
-        src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=1920&q=80"
+        src="/images/hero-bg.jpeg"
         alt="Ultralight w locie — szkolenie lotnicze RomanSky Piła"
         fill
         priority

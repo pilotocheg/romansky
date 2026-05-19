@@ -50,7 +50,7 @@ export default function About() {
 
           <div className="relative h-96 md:h-[500px]">
             <Image
-              src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=800&q=80"
+              src="/images/history-bg.JPG"
               alt="Instruktor lotniczy Roman Jałowiecki przy samolocie ultralight w Pile"
               fill
               className="object-cover"

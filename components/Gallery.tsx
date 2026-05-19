@@ -7,58 +7,49 @@ import "yet-another-react-lightbox/styles.css";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=70",
-    alt: "Kokpit samolotu ultralight — szkolenie lotnicze Piła",
-    caption: "W kokpicie Allegro 2000",
+    src: "/images/gallery-1.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 1",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1520437358207-323b43b50729?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1520437358207-323b43b50729?w=600&q=70",
-    alt: "Lotnisko z lotu ptaka — Piła EPPI",
-    caption: "Lotnisko Piła z powietrza",
+    src: "/images/gallery-2.JPG",
+    alt: "Galeria RomanSky — zdjęcie 2",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=600&q=70",
-    alt: "Pilot w kokpicie podczas lotu solo",
-    caption: "Lot solo — kurs pilota ultralight",
+    src: "/images/gallery-3.JPG",
+    alt: "Galeria RomanSky — zdjęcie 3",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?w=600&q=70",
-    alt: "Lot nad Wielkopolską — widok z lotu ptaka",
-    caption: "Lot nad Wielkopolską",
+    src: "/images/gallery-4.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 4",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1548613053-22087dd8edb8?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1548613053-22087dd8edb8?w=600&q=70",
-    alt: "Skrzydło ultralajtu podczas lotu",
-    caption: "W drodze, 600 m n.p.m.",
+    src: "/images/gallery-5.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 5",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1530968033775-2c92736b131e?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1530968033775-2c92736b131e?w=600&q=70",
-    alt: "Odprawianie przed lotem — inspekcja przedlotowa",
-    caption: "Odprawa przedlotowa z Romanem",
+    src: "/images/gallery-6.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 6",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=70",
-    alt: "Allegro 2000 na płycie lotniska w Pile",
-    caption: "Allegro 2000 gotowy do startu",
+    src: "/images/gallery-7.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 7",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=600&q=70",
-    alt: "Ultralight na tle błękitnego nieba — lot samolotem Piła",
-    caption: "Idealna pogoda do latania",
+    src: "/images/gallery-8.JPG",
+    alt: "Galeria RomanSky — zdjęcie 8",
+    caption: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=1200&q=80",
-    thumb: "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=600&q=70",
-    alt: "Zachód słońca na lotnisku — lotnisko Piła",
-    caption: "Złota godzina w Pile",
+    src: "/images/gallery-9.jpeg",
+    alt: "Galeria RomanSky — zdjęcie 9",
+    caption: "",
   },
 ];
 
@@ -90,7 +81,7 @@ export default function Gallery() {
             >
               <div className="relative w-full aspect-[4/3]">
                 <Image
-                  src={p.thumb}
+                  src={p.src}
                   alt={p.alt}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -112,6 +103,7 @@ export default function Gallery() {
         index={index}
         close={() => setIndex(-1)}
         slides={photos.map((p) => ({ src: p.src, alt: p.alt }))}
+
       />
     </section>
   );
