@@ -3,55 +3,59 @@
 import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
 
 const photos = [
   {
     src: "/images/gallery-1.jpeg",
     alt: "Galeria RomanSky — zdjęcie 1",
-    caption: "",
+    caption: "Allegro 2000 przed startem",
   },
   {
     src: "/images/gallery-2.JPG",
     alt: "Galeria RomanSky — zdjęcie 2",
-    caption: "",
+    caption: "Po locie rodzinnym - ojciec i córka",
   },
   {
     src: "/images/gallery-3.JPG",
     alt: "Galeria RomanSky — zdjęcie 3",
-    caption: "",
+    caption: "Allegro pod hangarem na tle pięknego zachodu słońca",
   },
   {
     src: "/images/gallery-4.jpeg",
     alt: "Galeria RomanSky — zdjęcie 4",
-    caption: "",
+    caption: "Niski przelot Allegro nad lotniskiem EPPI",
   },
   {
     src: "/images/gallery-5.jpeg",
     alt: "Galeria RomanSky — zdjęcie 5",
-    caption: "",
+    caption: "Piękny zachód słońca w locie z miejsca pasażera",
   },
   {
     src: "/images/gallery-6.jpeg",
     alt: "Galeria RomanSky — zdjęcie 6",
-    caption: "",
+    caption: "Dwaj myśliwce: Lim-5 i Allegro :)",
   },
   {
     src: "/images/gallery-7.jpeg",
     alt: "Galeria RomanSky — zdjęcie 7",
-    caption: "",
+    caption: "Roman oblatuje nowy typ samolotu",
   },
   {
     src: "/images/gallery-8.JPG",
     alt: "Galeria RomanSky — zdjęcie 8",
-    caption: "",
+    caption: "Roman z uczniem po locie treningowym",
   },
   {
     src: "/images/gallery-9.jpeg",
     alt: "Galeria RomanSky — zdjęcie 9",
-    caption: "",
+    caption: "Widok z powietrza na Piłę",
   },
 ];
+
+const LightboxPlugins = [Captions];
 
 export default function Gallery() {
   const [index, setIndex] = useState(-1);
@@ -99,11 +103,18 @@ export default function Gallery() {
       </div>
 
       <Lightbox
+        plugins={LightboxPlugins}
+        captions={{
+          descriptionTextAlign: "center",
+        }}
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
-        slides={photos.map((p) => ({ src: p.src, alt: p.alt }))}
-
+        slides={photos.map((p) => ({
+          src: p.src,
+          alt: p.alt,
+          description: p.caption,
+        }))}
       />
     </section>
   );
