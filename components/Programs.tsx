@@ -83,7 +83,7 @@ export default function Programs() {
 
           <a
             href="#contact"
-            className="inline-flex bg-brand-sky hover:bg-brand-sky-dark text-white font-semibold px-8 py-4 transition-colors"
+            className="flex justify-center w-full sm:w-fit bg-brand-sky hover:bg-brand-sky-dark text-white font-semibold px-8 py-4 transition-colors"
           >
             Zapytaj o szkolenie
           </a>
@@ -102,7 +102,7 @@ export default function Programs() {
           </div>
           <a
             href="#contact"
-            className="shrink-0 border-2 border-brand-sky text-brand-sky hover:bg-brand-sky hover:text-white font-semibold px-6 py-3 transition-colors text-sm whitespace-nowrap"
+            className="flex shrink-0 justify-center w-full sm:w-auto border-2 border-brand-sky text-brand-sky hover:bg-brand-sky hover:text-white font-semibold px-6 py-3 transition-colors text-sm"
           >
             Zarezerwuj lot zapoznawczy
           </a>

@@ -78,18 +78,18 @@ export default function Fleet() {
               Latanie nim nad krajobrazem Wielkopolski to czysta przyjemność.
             </p>
 
-            <div className="grid grid-cols-2 gap-3 flex-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 flex-1">
               {specs.map(({ icon: Icon, label, value }) => (
                 <div
                   key={label}
-                  className="flex items-start gap-3 border border-divider p-3"
+                  className="flex sm:items-start gap-3 border border-divider p-3"
                 >
                   <Icon className="text-brand-sky shrink-0 mt-0.5" size={16} />
-                  <div>
-                    <div className="text-muted text-xs">{label}</div>
-                    <div className="text-charcoal text-sm font-semibold">
+                  <div className="flex md:flex-col justify-between w-full">
+                    <p className="text-muted text-xs max-md:mt-0.5">{label}</p>
+                    <p className="text-charcoal text-sm font-semibold max-md:text-right">
                       {value}
-                    </div>
+                    </p>
                   </div>
                 </div>
               ))}

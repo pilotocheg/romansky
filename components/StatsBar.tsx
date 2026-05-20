@@ -2,26 +2,33 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const stats = [
+type Stat = {
+  value: number;
+  suffix: string;
+  label: string;
+  /**
+   * Default is true.
+   */
+  animate?: boolean;
+};
+
+const stats: Stat[] = [
   { value: 1000, suffix: "+", label: "Godzin w powietrzu" },
   { value: 20, suffix: "+", label: "Wyszkolonych pilotów" },
-  { value: 1, suffix: "", label: "Samolot w flocie" },
+  { value: 1, suffix: "", label: "Samolotów we flocie", animate: false },
   { value: 11, suffix: "+", label: "Lat doświadczenia" },
 ];
 
-function CountUp({
-  target,
-  suffix,
-  active,
-}: {
-  target: number;
-  suffix: string;
+type CountUpProps = Pick<Stat, "suffix" | "animate"> & {
   active: boolean;
-}) {
-  const [count, setCount] = useState(0);
+  target: number;
+};
+
+function CountUp({ target, suffix, active, animate = true }: CountUpProps) {
+  const [count, setCount] = useState(animate ? 0 : target);
 
   useEffect(() => {
-    if (!active) return;
+    if (!active || !animate) return;
     let start = 0;
     const duration = 1800;
     const step = 16;
@@ -36,7 +43,7 @@ function CountUp({
       }
     }, step);
     return () => clearInterval(timer);
-  }, [active, target]);
+  }, [target, active, animate]);
 
   return (
     <span>
@@ -71,7 +78,12 @@ export default function StatsBar() {
           {stats.map((s) => (
             <div key={s.label}>
               <div className="text-brand-sky text-4xl md:text-5xl font-bold mb-2">
-                <CountUp target={s.value} suffix={s.suffix} active={active} />
+                <CountUp
+                  target={s.value}
+                  suffix={s.suffix}
+                  active={active}
+                  animate={s.animate}
+                />
               </div>
               <div className="text-white/70 text-sm font-medium uppercase tracking-wider">
                 {s.label}

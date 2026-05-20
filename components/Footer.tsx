@@ -25,6 +25,9 @@ export default function Footer() {
               Piła (EPPI), Wielkopolskie. Działamy od 2015 roku. Instruktor:
               Roman Jałowiecki.
             </p>
+            <p className="text-white/40 text-xs uppercase tracking-widest mb-3">
+              My w social mediach
+            </p>
             <div className="flex gap-3">
               <a
                 href="https://www.facebook.com/profile.php?id=100048673526562"

@@ -22,7 +22,7 @@ const info = [
   {
     icon: Clock,
     label: "Godziny",
-    value: "Pon – Sob  08:00 – 18:00",
+    value: "Jesteśmy dostępni w każdej chwili. Zapraszamy do kontaktu!",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
           <div className="bg-white border border-divider p-8">
             {submitted ? (
               <div className="text-center py-12">
@@ -205,7 +205,7 @@ export default function Contact() {
             )}
           </div>
 
-          <div className="space-y-6">
+          <div className="flex flex-col gap-6">
             {info.map(({ icon: Icon, label, value }) => (
               <div key={label} className="flex items-start gap-4">
                 <div className="p-3 bg-brand-sky/10 text-brand-sky shrink-0">
@@ -222,12 +222,12 @@ export default function Contact() {
               </div>
             ))}
 
-            <div className="mt-4 border border-divider overflow-hidden">
+            <div className="border border-divider flex-1 min-h-60">
               <iframe
                 title="Lokalizacja szkoły lotniczej RomanSky na Lotnisku Piła"
                 src="https://maps.google.com/maps?q=Lotnisko+Pi%C5%82a+EPPI+ul+Lotnicza+12+Pi%C5%82a&z=14&output=embed"
                 width="100%"
-                height="240"
+                height="100%"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"

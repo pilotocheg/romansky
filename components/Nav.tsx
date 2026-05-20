@@ -54,12 +54,25 @@ export default function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-2 transition-colors"
-        >
-          Zarezerwuj lot
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=100048673526562"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="w-9 h-9 flex items-center justify-center border border-divider text-muted hover:text-charcoal hover:border-charcoal transition-colors"
+          >
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-2 transition-colors"
+          >
+            Zarezerwuj lot
+          </a>
+        </div>
 
         {/* Hamburger */}
         <button
@@ -88,10 +101,31 @@ export default function Nav() {
             <a
               href="#contact"
               onClick={close}
-              className="mt-2 inline-flex justify-center bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-3 transition-colors"
+              className="mt-2 flex justify-center w-full bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-3 transition-colors"
             >
               Zarezerwuj lot
             </a>
+            <div className="mt-4 pt-4 border-t border-divider">
+              <p className="text-muted text-xs uppercase tracking-widest mb-3">
+                My w social mediach
+              </p>
+              <a
+                href="https://www.facebook.com/profile.php?id=100048673526562"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-9 h-9 flex items-center justify-center border border-divider text-muted hover:text-charcoal hover:border-charcoal transition-colors"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </div>
           </nav>
         </div>
       )}

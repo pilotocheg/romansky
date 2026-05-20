@@ -53,11 +53,11 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6 justify-center">
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="border border-divider bg-white p-8 flex flex-col"
+              className="border border-divider bg-white p-8 flex flex-col max-w-[768px]"
             >
               <Stars />
               <blockquote className="text-muted text-base leading-relaxed flex-1 mb-6">

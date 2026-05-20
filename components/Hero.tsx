@@ -34,16 +34,16 @@ export default function Hero() {
           <p className="text-brand-sky text-sm font-medium mb-10">
             Licencja ULL · Lot zapoznawczy · Wynajem samolotu
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#programs"
-              className="bg-brand-sky hover:bg-brand-sky-dark text-white font-semibold px-8 py-4 transition-colors text-base"
+              className="flex justify-center bg-brand-sky hover:bg-brand-sky-dark text-white font-semibold px-8 py-4 transition-colors text-base"
             >
               Zacznij szkolenie
             </a>
             <a
               href="#fleet"
-              className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold px-8 py-4 transition-colors text-base"
+              className="flex justify-center border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold px-8 py-4 transition-colors text-base"
             >
               Wynajmij samolot →
             </a>
