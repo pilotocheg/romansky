@@ -1,15 +1,17 @@
+import { SITE_URL } from "@/lib/site";
+
 export default function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": ["LocalBusiness", "SportsActivityLocation"],
-        "@id": "https://romansky.pl/#business",
+        "@id": `${SITE_URL}/#business`,
         name: "RomanSky Aviation",
         alternateName: ["RomanSky", "Szkoła Lotnicza RomanSky"],
         description:
           "Szkolenie lotnicze do licencji pilota ULL (program czeski LAA ČR) oraz wynajem samolotu Allegro 2000 w Pile. Certyfikowany instruktor Roman Jałowiecki. Szkolenie ultralajtem w Wielkopolsce od 2015 roku.",
-        url: "https://romansky.pl",
+        url: SITE_URL,
         telephone: "+48512187280",
         email: "romansky@wp.pl",
         foundingDate: "2015",
@@ -65,62 +67,62 @@ export default function StructuredData() {
           itemListElement: [
             {
               "@type": "Offer",
-              "@id": "https://romansky.pl/#offer-szkolenie",
+              "@id": `${SITE_URL}/#offer-szkolenie`,
               name: "Szkolenie Lotnicze do Licencji ULL (program czeski)",
               description:
                 "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin u inspektora czeskiego opłacany oddzielnie.",
-              url: "https://romansky.pl/#programs",
+              url: `${SITE_URL}/#programs`,
               category: "Szkolenie lotnicze",
               price: "14000",
               priceCurrency: "PLN",
             },
             {
               "@type": "Offer",
-              "@id": "https://romansky.pl/#offer-wynajem",
+              "@id": `${SITE_URL}/#offer-wynajem`,
               name: "Wynajem Samolotu Allegro 2000",
               description:
                 "Wynajem ultralajtu Allegro 2000 dla posiadaczy licencji ULL lub równoważnej w Pile.",
-              url: "https://romansky.pl/#fleet",
+              url: `${SITE_URL}/#fleet`,
               price: "400",
               priceCurrency: "PLN",
               unitText: "godz.",
             },
             {
               "@type": "Offer",
-              "@id": "https://romansky.pl/#offer-lot-zapoznawczy",
+              "@id": `${SITE_URL}/#offer-lot-zapoznawczy`,
               name: "Lot Zapoznawczy",
               description:
                 "30-minutowy lot próbny dla początkujących — idealne na prezent lub pierwszy krok do licencji pilota.",
-              url: "https://romansky.pl/#contact",
+              url: `${SITE_URL}/#contact`,
             },
           ],
         },
-        image: "https://romansky.pl/og-image.jpg",
-        logo: "https://romansky.pl/og-image.jpg",
+        image: `${SITE_URL}/og-image.jpg`,
+        logo: `${SITE_URL}/og-image.jpg`,
         sameAs: ["https://www.facebook.com/profile.php?id=100048673526562"],
       },
       {
         "@type": "WebSite",
-        "@id": "https://romansky.pl/#website",
-        url: "https://romansky.pl",
+        "@id": `${SITE_URL}/#website`,
+        url: SITE_URL,
         name: "RomanSky Aviation",
         description: "Szkolenie lotnicze i wynajem samolotu w Pile",
         inLanguage: "pl",
         publisher: {
-          "@id": "https://romansky.pl/#business",
+          "@id": `${SITE_URL}/#business`,
         },
         potentialAction: {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: "https://romansky.pl/?q={search_term_string}",
+            urlTemplate: `${SITE_URL}/?q={search_term_string}`,
           },
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "FAQPage",
-        "@id": "https://romansky.pl/#faq",
+        "@id": `${SITE_URL}/#faq`,
         mainEntity: [
           {
             "@type": "Question",

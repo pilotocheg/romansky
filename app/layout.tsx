@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,10 +10,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL = "https://romansky.pl";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
     template: "%s | RomanSky Aviation",
@@ -63,12 +62,12 @@ export const metadata: Metadata = {
     "latanie ultralight",
   ],
   alternates: {
-    canonical: BASE_URL,
+    canonical: SITE_URL,
   },
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    url: BASE_URL,
+    url: SITE_URL,
     siteName: "RomanSky Aviation",
     title: "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
     description:
