@@ -11,6 +11,12 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
+      "Uwielbiam latać...przeważnie sa to duuuże samoloty zabierajace ponad 200 osob na pokład...tu miałam okazje leciec sama z pilotem..wrażenia niesamowite..pilot mimo mojego gadulstwa cały czas opanowany i skupiony na locie...a ja nie wiedziałam w którą stronę obrócić głowę...takie widoki z Allegro:)przelecieć się z Tobą to sama przyjemność:):):)",
+    name: "Magdalena",
+    date: "Maj, 2026",
+  },
+  {
+    quote:
       "Prezent urodzinowy w postaci przelotu samolotem ultralight był wyjątkowym i niezapomnianym przeżyciem. Organizacja to pełen profesjonalizm, a pilot zadbał o bezpieczeństwo i komfort podczas całego przelotu. Możliwość podziwiania krajobrazów z lotu ptaka sprawiła, że był to prezent nie tylko oryginalny, ale też pełen wrażeń i pozytywnych emocji, a także dawki adrenaliny, której zazwyczaj trudno doświadczyć na co dzień. To doświadczenie na długo pozostanie w mojej w pamięci i z pewnością mogę polecić taki prezent każdemu, kto lubi nowe przygody i niezapomniane chwile.\n\nPs. Proszę nie wkurzać pilota, bo zabiję. A i jeszcze nie zaczepiać.",
     name: "Gosia",
     date: "Lipiec, 2025",

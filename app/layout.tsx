@@ -62,21 +62,19 @@ export const metadata: Metadata = {
     "latanie ultralight",
   ],
   alternates: {
-    canonical: SITE_URL,
+    canonical: "./",
   },
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    url: SITE_URL,
+    url: "./",
     siteName: "RomanSky Aviation",
     title: "RomanSky Aviation — Szkolenie Lotnicze i Wynajem Samolotu | Piła",
     description:
       "Szkolenie do licencji pilota ULL (program czeski) i wynajem samolotu Allegro 2000 na lotnisku Piła (EPPI). Od 2015 roku. Certyfikowany instruktor. Zarezerwuj lot zapoznawczy!",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/hero-bg.jpeg",
         alt: "RomanSky Aviation — Szkolenie Lotnicze w Pile",
       },
     ],
@@ -86,7 +84,7 @@ export const metadata: Metadata = {
     title: "RomanSky Aviation — Szkolenie Lotnicze | Piła",
     description:
       "Szkolenie do licencji ULL, lot ultralajtem, wynajem Allegro 2000 w Pile. Zarezerwuj lot zapoznawczy!",
-    images: ["/og-image.jpg"],
+    images: ["/images/hero-bg.jpeg"],
   },
   robots: {
     index: true,

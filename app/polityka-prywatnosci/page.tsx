@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Polityka Prywatności",
   description:
     "Polityka prywatności szkoły lotniczej RomanSky. Informacje o przetwarzaniu danych osobowych zgodnie z RODO.",
+  alternates: { canonical: "./" },
   robots: { index: false, follow: false },
 };
 

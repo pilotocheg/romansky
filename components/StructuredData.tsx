@@ -1,4 +1,7 @@
+import { faqs } from "@/lib/faqs";
 import { SITE_URL } from "@/lib/site";
+
+const BUSINESS_IMAGE = `${SITE_URL}/images/hero-bg.jpeg`;
 
 export default function StructuredData() {
   const schema = {
@@ -34,7 +37,7 @@ export default function StructuredData() {
           longitude: 16.7408,
         },
         hasMap: "https://maps.google.com/?q=Lotnisko+Piła+EPPI",
-        openingHours: "Mo-Sa 08:00-18:00",
+        openingHours: "Mo-Su 00:00-24:00",
         priceRange: "400 PLN/godz.",
         currenciesAccepted: "PLN",
         paymentAccepted: "Gotówka, Przelew",
@@ -97,8 +100,7 @@ export default function StructuredData() {
             },
           ],
         },
-        image: `${SITE_URL}/og-image.jpg`,
-        logo: `${SITE_URL}/og-image.jpg`,
+        image: [BUSINESS_IMAGE, `${SITE_URL}/images/fleet.jpeg`],
         sameAs: ["https://www.facebook.com/profile.php?id=100048673526562"],
       },
       {
@@ -111,44 +113,18 @@ export default function StructuredData() {
         publisher: {
           "@id": `${SITE_URL}/#business`,
         },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${SITE_URL}/?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
       },
       {
         "@type": "FAQPage",
         "@id": `${SITE_URL}/#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Czy potrzebuję wcześniejszego doświadczenia, żeby zacząć szkolenie lotnicze?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Nie, wcześniejsze doświadczenie nie jest wymagane. Przyjmujemy kompletnych początkujących. Przed pierwszą lekcją latania wykonasz krótką samoocenę zdrowotną oraz wstępne zajęcia teoretyczne z Romanem.",
-            },
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a,
           },
-          {
-            "@type": "Question",
-            name: "Ile kosztuje szkolenie na pilota ultralight?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Szkolenie do licencji ULL (program czeski) kosztuje 14 000 zł — obejmuje teorię i praktykę. Koszt egzaminu jest pobierany oddzielnie przez inspektora czeskiego. Wynajem samolotu Allegro 2000 kosztuje 400 zł/godz.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Jak długo trwa uzyskanie licencji pilota ULL?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Większość kursantów uzyskuje licencję w ciągu 3–6 miesięcy, w zależności od częstotliwości lekcji i warunków pogodowych. Program czeski LAA ČR obejmuje część teoretyczną i praktyczną zakończoną egzaminem przed inspektorem czeskim.",
-            },
-          },
-        ],
+        })),
       },
     ],
   };

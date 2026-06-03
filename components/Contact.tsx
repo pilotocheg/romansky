@@ -22,7 +22,7 @@ const info = [
   {
     icon: Clock,
     label: "Godziny",
-    value: "Jesteśmy dostępni w każdej chwili. Zapraszamy do kontaktu!",
+    value: "24/7 — zapraszamy do kontaktu w każdej chwili",
   },
 ];
 
