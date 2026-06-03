@@ -1,5 +1,5 @@
 import { faqs } from "@/lib/faqs";
-import { SITE_URL } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const BUSINESS_IMAGE = `${SITE_URL}/images/hero-bg.jpeg`;
 
@@ -10,10 +10,9 @@ export default function StructuredData() {
       {
         "@type": ["LocalBusiness", "SportsActivityLocation"],
         "@id": `${SITE_URL}/#business`,
-        name: "RomanSky Aviation",
+        name: SITE_NAME,
         alternateName: ["RomanSky", "Szkoła Lotnicza RomanSky"],
-        description:
-          "Szkolenie lotnicze do licencji pilota ULL (program czeski LAA ČR) oraz wynajem samolotu Allegro 2000 w Pile. Certyfikowany instruktor Roman Jałowiecki. Szkolenie ultralajtem w Wielkopolsce od 2015 roku.",
+        description: SITE_DESCRIPTION,
         url: SITE_URL,
         telephone: "+48512187280",
         email: "romansky@wp.pl",
@@ -107,8 +106,8 @@ export default function StructuredData() {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
         url: SITE_URL,
-        name: "RomanSky Aviation",
-        description: "Szkolenie lotnicze i wynajem samolotu w Pile",
+        name: SITE_NAME,
+        description: SITE_DESCRIPTION,
         inLanguage: "pl",
         publisher: {
           "@id": `${SITE_URL}/#business`,
