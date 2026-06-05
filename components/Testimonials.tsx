@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     quote:
       "Od szkolenia z Romanem mam tylko pozytywne wrażenia. Roman jest bardzo profesjonalny pilot i świetny instruktor. Osobno chcę podkreślić samolot Allegro 2000 - który jest świetnym i biezpiecznym samolotem dla początkujących pilotów.",
     name: "Viacheslav Dmytriiev",
-    date: "Marzec, 2025",
+    date: "Kwiecień, 2025",
     avatarUrl: "/images/testimony-1-avatar.jpeg",
   },
   {
