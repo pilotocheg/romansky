@@ -15,11 +15,11 @@ export const faqs = [
   },
   {
     q: "Jaki jest cennik szkolenia?",
-    a: "Szkolenie do licencji pilota ULL kosztuje 14 000 zł i obejmuje teorię oraz praktykę. Oddzielnie płatny jest egzamin pod nadzorem czeskiego instruktora (szacunkowo ok. 3000 zł) oraz badania lotniczo-lekarskie.",
+    a: "Szkolenie do licencji pilota ULL kosztuje 15 000 zł i obejmuje teorię oraz praktykę. Istnieje możliwość rozłożenia kosztów kursu na raty. Oddzielnie płatny jest egzamin pod nadzorem czeskiego instruktora (szacunkowo ok. 3000 zł) oraz badania lotniczo-lekarskie.",
   },
   {
     q: "Jaki jest cennik wynajmu samolotu?",
-    a: "Wynajem samolotu Allegro 2000 kosztuje 400 zł za godzinę lotu. Oferujemy również pakiety 10-godzinne w cenie 3500 zł.",
+    a: "Wynajem samolotu Allegro 2000 kosztuje 450 zł za godzinę lotu. Oferujemy również pakiety 10-godzinne w cenie 4000 zł.",
   },
   {
     q: "Czy mogę wynająć samolot, posiadając licencję wydaną w innym kraju?",

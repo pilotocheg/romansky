@@ -12,7 +12,10 @@ const facts = [
   { label: "Badania lotniczo-lekarskie", value: MEDICAL_REQUIREMENT },
   { label: "Minimalny nalot", value: "20 godzin (z instruktorem i solo)" },
   { label: "Czas trwania", value: "Zwykle 2–4 miesiące" },
-  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
+  {
+    label: "Cena szkolenia",
+    value: "15 000 zł (teoria + praktyka), możliwe raty",
+  },
   { label: "Egzamin", value: "Pod nadzorem czeskiego instruktora, ok. 3000 zł" },
   { label: "Samolot szkolny", value: "Allegro 2000, Rotax 912 UL" },
 ];
@@ -121,9 +124,12 @@ export default function LicencjaUllPage() {
       <section>
         <h2>Ile kosztuje licencja pilota ULL?</h2>
         <p>
-          Cena szkolenia w RomanSky to <strong>14 000 zł</strong> i obejmuje
-          zarówno teorię, jak i praktykę na samolocie szkolnym. Oddzielnie
-          płatne są:
+          Cena szkolenia w RomanSky to <strong>15 000 zł</strong> i obejmuje
+          zarówno teorię, jak i praktykę na samolocie szkolnym.{" "}
+          <strong>
+            Istnieje możliwość rozłożenia kosztów kursu na raty.
+          </strong>{" "}
+          Oddzielnie płatne są:
         </p>
         <ul>
           <li>
@@ -145,8 +151,8 @@ export default function LicencjaUllPage() {
         </p>
         <p>
           Po uzyskaniu licencji możesz dalej latać z nami —{" "}
-          <Link href="/#fleet">wynajem Allegro 2000</Link> kosztuje 400 zł za
-          godzinę. Oferujemy również pakiety 10-godzinne w cenie 3500 zł.
+          <Link href="/#fleet">wynajem Allegro 2000</Link> kosztuje 450 zł za
+          godzinę. Oferujemy również pakiety 10-godzinne w cenie 4000 zł.
         </p>
       </section>
 

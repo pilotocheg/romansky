@@ -16,7 +16,7 @@ export const PAGE_ULL: SubPage = {
   label: "Licencja pilota ULL",
   title: "Licencja pilota ULL — kurs pilota ultralight w Pile",
   description:
-    "Kurs na licencję pilota samolotów ultralekkich ULL (program czeski LAA ČR) w Pile. Wymagania, przebieg szkolenia, czas trwania i cena 14 000 zł. Szkoła lotnicza RomanSky, lotnisko EPPI.",
+    "Kurs na licencję pilota samolotów ultralekkich ULL (program czeski LAA ČR) w Pile. Wymagania, przebieg szkolenia, czas trwania i cena 15 000 zł (możliwe raty). Szkoła lotnicza RomanSky, lotnisko EPPI.",
   updated: "2026-10-22",
 };
 

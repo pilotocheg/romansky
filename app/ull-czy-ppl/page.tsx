@@ -33,7 +33,7 @@ const rows: { label: string; values: string[] }[] = [
   {
     label: "Orientacyjna cena szkolenia",
     values: [
-      "14 000 zł w RomanSky — bez VAT",
+      "15 000 zł w RomanSky — bez VAT, możliwe raty",
       "ok. 20 000 zł (często + 23% VAT)",
       "ok. 30 000 zł (często + 23% VAT)",
       "ok. 42 000 zł (często + 23% VAT)",

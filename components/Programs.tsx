@@ -10,7 +10,10 @@ const details = [
     value: `Orzeczenie: ${MEDICAL_REQUIREMENT}`,
   },
   { label: "Zaświadczenie", value: "O ukończeniu szkolenia lotniczego" },
-  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
+  {
+    label: "Cena szkolenia",
+    value: "15 000 zł (teoria + praktyka), możliwe raty",
+  },
   {
     label: "Egzamin",
     value: "Pod nadzorem czeskiego instruktora, ok. 3000 zł",

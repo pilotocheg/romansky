@@ -38,7 +38,7 @@ export default function StructuredData() {
         },
         hasMap: "https://maps.google.com/?q=Lotnisko+Piła+EPPI",
         openingHours: "Mo-Su 00:00-24:00",
-        priceRange: "400 PLN/godz.",
+        priceRange: "450 PLN/godz.",
         currenciesAccepted: "PLN",
         paymentAccepted: "Gotówka, Przelew",
         areaServed: [
@@ -75,10 +75,10 @@ export default function StructuredData() {
               "@id": `${SITE_URL}/#offer-szkolenie`,
               name: "Szkolenie Lotnicze do Licencji ULL (program czeski)",
               description:
-                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin pod nadzorem czeskiego instruktora (ok. 3000 zł) opłacany oddzielnie.",
+                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 15 000 zł (teoria + praktyka), z możliwością rozłożenia na raty. Egzamin pod nadzorem czeskiego instruktora (ok. 3000 zł) opłacany oddzielnie.",
               url: `${SITE_URL}${PAGE_ULL.path}`,
               category: "Szkolenie lotnicze",
-              price: "14000",
+              price: "15000",
               priceCurrency: "PLN",
             },
             {
@@ -88,7 +88,7 @@ export default function StructuredData() {
               description:
                 "Wynajem ultralajtu Allegro 2000 dla posiadaczy licencji ULL lub równoważnej w Pile.",
               url: `${SITE_URL}/#fleet`,
-              price: "400",
+              price: "450",
               priceCurrency: "PLN",
               unitText: "godz.",
             },

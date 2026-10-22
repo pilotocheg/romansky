@@ -20,7 +20,7 @@ const specs = [
     label: "Bezpieczeństwo",
     value: "Ma wbudowany spadochron",
   },
-  { icon: Clock, label: "Cena wynajmu", value: "400 zł / godz." },
+  { icon: Clock, label: "Cena wynajmu", value: "450 zł / godz." },
 ];
 
 export default function Fleet() {
