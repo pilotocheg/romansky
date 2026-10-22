@@ -12,7 +12,8 @@ const facts = [
   { label: "Badania lotniczo-lekarskie", value: MEDICAL_REQUIREMENT },
   { label: "Minimalny nalot", value: "20 godzin (z instruktorem i solo)" },
   { label: "Czas trwania", value: "Zwykle 2–4 miesiące" },
-  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka), bez VAT" },
+  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
+  { label: "Egzamin", value: "Pod nadzorem czeskiego instruktora, ok. 3000 zł" },
   { label: "Samolot szkolny", value: "Allegro 2000, Rotax 912 UL" },
 ];
 
@@ -22,7 +23,7 @@ export default function LicencjaUllPage() {
       page={PAGE_ULL}
       eyebrow="Kurs pilota ultralight · Piła"
       heading="Licencja pilota ULL — kurs pilota samolotów ultralekkich"
-      lead="Szkolenie do czeskiej licencji pilota ULL według programu LAA ČR na lotnisku Piła (EPPI). Przyjmujemy zupełnych początkujących — od pierwszej lekcji teorii do egzaminu przed inspektorem."
+      lead="Szkolenie do czeskiej licencji pilota ULL według programu LAA ČR na lotnisku Piła (EPPI). Przyjmujemy zupełnych początkujących — od pierwszej lekcji teorii do egzaminu."
       ctaLabel="Zapytaj o szkolenie"
     >
       <section>
@@ -102,9 +103,9 @@ export default function LicencjaUllPage() {
             loty po kręgu i przeloty nawigacyjne pod nadzorem instruktora.
           </li>
           <li>
-            <strong>Egzamin.</strong> Egzamin teoretyczny i praktyczny przed
-            czeskim inspektorem. Po jego zdaniu otrzymujesz licencję pilota
-            ULL.
+            <strong>Egzamin.</strong> Egzamin teoretyczny i praktyczny pod
+            nadzorem czeskiego instruktora. Po jego zdaniu otrzymujesz licencję
+            pilota ULL.
           </li>
         </ol>
         <p>
@@ -121,13 +122,13 @@ export default function LicencjaUllPage() {
         <h2>Ile kosztuje licencja pilota ULL?</h2>
         <p>
           Cena szkolenia w RomanSky to <strong>14 000 zł</strong> i obejmuje
-          zarówno teorię, jak i praktykę na samolocie szkolnym. To cena
-          końcowa — nie doliczamy do niej podatku VAT. Oddzielnie płatne są:
+          zarówno teorię, jak i praktykę na samolocie szkolnym. Oddzielnie
+          płatne są:
         </p>
         <ul>
           <li>
-            opłata egzaminacyjna — pobierana bezpośrednio przez czeskiego
-            inspektora,
+            egzamin pod nadzorem czeskiego instruktora — szacunkowo ok. 3000
+            zł,
           </li>
           <li>badania lotniczo-lekarskie.</li>
         </ul>
@@ -145,7 +146,7 @@ export default function LicencjaUllPage() {
         <p>
           Po uzyskaniu licencji możesz dalej latać z nami —{" "}
           <Link href="/#fleet">wynajem Allegro 2000</Link> kosztuje 400 zł za
-          godzinę.
+          godzinę. Oferujemy również pakiety 10-godzinne w cenie 3500 zł.
         </p>
       </section>
 

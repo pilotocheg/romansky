@@ -14,6 +14,14 @@ export const faqs = [
     a: `Wymagane jest orzeczenie lotniczo-lekarskie: ${MEDICAL_REQUIREMENT}. Pomagamy w uzyskaniu takiego orzeczenia.`,
   },
   {
+    q: "Jaki jest cennik szkolenia?",
+    a: "Szkolenie do licencji pilota ULL kosztuje 14 000 zł i obejmuje teorię oraz praktykę. Oddzielnie płatny jest egzamin pod nadzorem czeskiego instruktora (szacunkowo ok. 3000 zł) oraz badania lotniczo-lekarskie.",
+  },
+  {
+    q: "Jaki jest cennik wynajmu samolotu?",
+    a: "Wynajem samolotu Allegro 2000 kosztuje 400 zł za godzinę lotu. Oferujemy również pakiety 10-godzinne w cenie 3500 zł.",
+  },
+  {
     q: "Czy mogę wynająć samolot, posiadając licencję wydaną w innym kraju?",
     a: "Tak — akceptujemy pilotów z uznanymi zagranicznymi licencjami UL lub LAPL. Przed pierwszym samodzielnym lotem wymagany jest krótki lot sprawdzający z Romanem, aby upewnić się, że znasz Allegro 2000 i lokalne procedury.",
   },

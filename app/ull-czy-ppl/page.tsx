@@ -28,15 +28,15 @@ const rows: { label: string; values: string[] }[] = [
   },
   {
     label: "Badania lekarskie",
-    values: [MEDICAL_REQUIREMENT, MEDICAL_REQUIREMENT, "LAPL lub klasa 2", "Klasa 2"],
+    values: [MEDICAL_REQUIREMENT, MEDICAL_REQUIREMENT, MEDICAL_REQUIREMENT, MEDICAL_REQUIREMENT],
   },
   {
     label: "Orientacyjna cena szkolenia",
     values: [
       "14 000 zł w RomanSky — bez VAT",
-      "ok. 15–28 tys. zł (często + 23% VAT)",
-      "ok. 25–38 tys. zł (często + 23% VAT)",
-      "ok. 35–48 tys. zł (często + 23% VAT)",
+      "ok. 20 000 zł (często + 23% VAT)",
+      "ok. 30 000 zł (często + 23% VAT)",
+      "ok. 42 000 zł (często + 23% VAT)",
     ],
   },
   {
@@ -113,8 +113,8 @@ export default function UllCzyPplPage() {
           </table>
         </div>
         <p className="text-sm mt-4">
-          Dane orientacyjne. Ceny pochodzą z cenników polskich szkół i
-          aeroklubów (2025–2026) i obejmują teorię oraz minimalny nalot — w
+          Dane orientacyjne. Ceny to uśrednione wartości z cenników polskich
+          szkół i aeroklubów (2025–2026) i obejmują teorię oraz minimalny nalot — w
           praktyce większość kursantów potrzebuje kilku dodatkowych godzin.
           Badania lotniczo-lekarskie i opłaty egzaminacyjne są płatne
           oddzielnie.
@@ -165,7 +165,8 @@ export default function UllCzyPplPage() {
           Europejska licencja na samoloty o maksymalnej masie startowej do 2000
           kg, z maksymalnie trzema pasażerami na pokładzie. Wymaga co najmniej
           30 godzin szkolenia w powietrzu (w tym 6 godzin solo) w organizacji
-          szkolącej (ATO lub DTO). Ważna w krajach EASA.
+          szkolącej (ATO lub DTO) oraz orzeczenia lotniczo-lekarskiego
+          ({MEDICAL_REQUIREMENT}). Ważna w krajach EASA.
         </p>
       </section>
 
@@ -174,16 +175,17 @@ export default function UllCzyPplPage() {
         <p>
           Licencja pilota turystycznego zgodna z ICAO, uznawana na całym
           świecie. Wymaga co najmniej 45 godzin szkolenia w powietrzu (w tym
-          10 godzin solo) i orzeczenia klasy 2. Szkolenie odbywa się na
+          10 godzin solo) i orzeczenia lotniczo-lekarskiego ({MEDICAL_REQUIREMENT}). Szkolenie odbywa się na
           cięższych samolotach niż ultralajty, więc jest zazwyczaj wyraźnie
           droższe. PPL(A) to także pierwszy krok, jeśli myślisz o zawodzie
           pilota (CPL, ATPL).
         </p>
         <p>
           <strong>W RomanSky nie prowadzimy szkoleń PPL(A) ani LAPL(A).</strong>{" "}
-          Doświadczenie zdobyte na ultralajcie często ułatwia jednak dalsze
-          szkolenie — o ewentualnym zaliczeniu części nalotu decyduje
-          organizacja szkoląca.
+          Doświadczenie zdobyte na ultralajcie ułatwia jednak dalsze
+          szkolenie, a zgodnie z przepisami EASA (Part-FCL) część nalotu
+          można zaliczyć na poczet kursu — do 10% wymaganego czasu lotu, ale
+          nie więcej niż 10 godzin.
         </p>
       </section>
 

@@ -13,7 +13,7 @@ const details = [
   { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
   {
     label: "Egzamin",
-    value: "Opłata pobierana bezpośrednio przez inspektora czeskiego",
+    value: "Pod nadzorem czeskiego instruktora, ok. 3000 zł",
   },
   {
     label: "Uznanie licencji",
@@ -71,9 +71,9 @@ export default function Programs() {
           <p className="text-muted text-base leading-relaxed mb-6">
             Czeska licencja pilota ultralajtu uprawnia do samodzielnych lotów
             dwumiejscowymi ultralajty. Szkolenie łączy teorię z lotami z
-            instruktorem i lotami solo, zakończonymi egzaminem przed inspektorem
-            czeskim. Licencja uznawana w Czechach oraz w szeregu krajów
-            europejskich — w tym w Polsce.
+            instruktorem i lotami solo, zakończonymi egzaminem pod nadzorem
+            czeskiego instruktora. Licencja uznawana w Czechach oraz w szeregu
+            krajów europejskich — w tym w Polsce.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-3 mb-8">

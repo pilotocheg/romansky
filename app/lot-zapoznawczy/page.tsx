@@ -18,8 +18,8 @@ export default function LotZapoznawczyPage() {
       <section>
         <div className="relative h-64 md:h-96">
           <Image
-            src="/images/gallery-5.jpeg"
-            alt="Zachód słońca widziany z miejsca pasażera podczas lotu ultralajtem"
+            src="/images/fleet.jpeg"
+            alt="Samolot Allegro 2000 przed lotem zapoznawczym na lotnisku Piła"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"

@@ -75,7 +75,7 @@ export default function StructuredData() {
               "@id": `${SITE_URL}/#offer-szkolenie`,
               name: "Szkolenie Lotnicze do Licencji ULL (program czeski)",
               description:
-                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin u inspektora czeskiego opłacany oddzielnie.",
+                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin pod nadzorem czeskiego instruktora (ok. 3000 zł) opłacany oddzielnie.",
               url: `${SITE_URL}${PAGE_ULL.path}`,
               category: "Szkolenie lotnicze",
               price: "14000",
