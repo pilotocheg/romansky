@@ -1,14 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Menu, X, Plane } from "lucide-react";
 
 const links = [
-  { label: "O nas", href: "#about" },
-  { label: "Szkolenia", href: "#programs" },
-  { label: "Flota", href: "#fleet" },
-  { label: "Galeria", href: "#gallery" },
-  { label: "Kontakt", href: "#contact" },
+  { label: "O nas", href: "/#about" },
+  { label: "Szkolenia", href: "/#programs" },
+  { label: "Flota", href: "/#fleet" },
+  { label: "Galeria", href: "/#gallery" },
+  { label: "Kontakt", href: "/#contact" },
 ];
 
 export default function Nav() {
@@ -30,8 +31,8 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="flex items-center gap-2 text-charcoal font-bold text-xl tracking-tight"
           onClick={close}
         >
@@ -39,18 +40,18 @@ export default function Nav() {
           <span>
             Roman<span className="text-brand-sky">Sky</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               className="text-muted hover:text-charcoal text-sm font-medium transition-colors"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -66,12 +67,12 @@ export default function Nav() {
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
           </a>
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="inline-flex items-center bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-2 transition-colors"
           >
             Zarezerwuj lot
-          </a>
+          </Link>
         </div>
 
         {/* Hamburger */}
@@ -89,22 +90,22 @@ export default function Nav() {
         <div className="md:hidden bg-white border-t border-divider px-6 pb-6">
           <nav className="flex flex-col gap-4 pt-4">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 onClick={close}
                 className="text-charcoal font-medium text-base"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={close}
               className="mt-2 flex justify-center w-full bg-brand-sky hover:bg-brand-sky-dark text-white text-sm font-semibold px-5 py-3 transition-colors"
             >
               Zarezerwuj lot
-            </a>
+            </Link>
             <div className="mt-4 pt-4 border-t border-divider">
               <p className="text-muted text-xs uppercase tracking-widest mb-3">
                 My w social mediach

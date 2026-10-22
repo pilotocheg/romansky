@@ -27,7 +27,7 @@ export default function Hero() {
             <br />w Pile
           </h1>
           <p className="text-white/80 text-lg md:text-xl mb-4 leading-relaxed">
-            Szkolenie do licencji ULL i wynajem samolotu
+            Kurs pilota ultralight do licencji ULL i wynajem samolotu
             <br className="hidden sm:block" />
             Allegro 2000 na Lotnisku Piła. Od 2015 roku.
           </p>

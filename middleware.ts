@@ -15,7 +15,9 @@ function isLocalDevHost(host: string) {
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host")?.toLowerCase().split(":")[0];
-  if (!host || host === SITE_HOST || isLocalDevHost(host)) {
+  // Vercel preview deployments must stay on their own URL so they can be reviewed.
+  const isPreview = process.env.VERCEL_ENV === "preview";
+  if (!host || host === SITE_HOST || isLocalDevHost(host) || isPreview) {
     return NextResponse.next();
   }
 
