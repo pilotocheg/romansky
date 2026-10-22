@@ -18,8 +18,8 @@ export default function LotZapoznawczyPage() {
       <section>
         <div className="relative h-64 md:h-96">
           <Image
-            src="/images/fleet.jpeg"
-            alt="Samolot Allegro 2000 przed lotem zapoznawczym na lotnisku Piła"
+            src="/images/gallery-5.jpeg"
+            alt="Zachód słońca widziany z miejsca pasażera podczas lotu ultralajtem"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -74,12 +74,7 @@ export default function LotZapoznawczyPage() {
             inny termin.
           </li>
           <li>
-            <strong>Masa pasażera:</strong> samoloty ultralekkie mają
-            ograniczoną masę startową, dlatego przy rezerwacji zapytamy o Twoją
-            wagę.
-          </li>
-          <li>
-            <strong>Ubiór:</strong> wygodne ubranie i płaskie obuwie, w
+            <strong>Strój:</strong> wygodne ubranie i płaskie obuwie, w
             słoneczne dni — okulary przeciwsłoneczne.
           </li>
         </ul>

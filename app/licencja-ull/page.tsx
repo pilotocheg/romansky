@@ -2,15 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SubPageShell from "@/components/SubPageShell";
 import { PAGE_COMPARISON, PAGE_DISCOVERY, PAGE_ULL, subPageMetadata } from "@/lib/pages";
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
 
 export const metadata: Metadata = subPageMetadata(PAGE_ULL);
 
 const facts = [
   { label: "Minimalny wiek", value: "16 lat" },
   { label: "Doświadczenie", value: "Nie jest wymagane" },
+  { label: "Badania lotniczo-lekarskie", value: MEDICAL_REQUIREMENT },
   { label: "Minimalny nalot", value: "20 godzin (z instruktorem i solo)" },
   { label: "Czas trwania", value: "Zwykle 2–4 miesiące" },
-  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },
+  { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka), bez VAT" },
   { label: "Samolot szkolny", value: "Allegro 2000, Rotax 912 UL" },
 ];
 
@@ -76,9 +78,9 @@ export default function LicencjaUllPage() {
           </li>
         </ul>
         <p>
-          Wymagane jest ukończone <strong>16 lat</strong> oraz ważne orzeczenie
-          lotniczo-lekarskie — co najmniej klasy LAPL zgodnie z przepisami
-          EASA. Pomagamy w uzyskaniu takiego orzeczenia.
+          Musisz mieć ukończone <strong>16 lat</strong> oraz ważne orzeczenie
+          lotniczo-lekarskie: <strong>{MEDICAL_REQUIREMENT}</strong>. Pomagamy
+          w uzyskaniu takiego orzeczenia.
         </p>
       </section>
 
@@ -119,8 +121,8 @@ export default function LicencjaUllPage() {
         <h2>Ile kosztuje licencja pilota ULL?</h2>
         <p>
           Cena szkolenia w RomanSky to <strong>14 000 zł</strong> i obejmuje
-          zarówno teorię, jak i praktykę na samolocie szkolnym. Oddzielnie
-          płatne są:
+          zarówno teorię, jak i praktykę na samolocie szkolnym. To cena
+          końcowa — nie doliczamy do niej podatku VAT. Oddzielnie płatne są:
         </p>
         <ul>
           <li>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SubPageShell from "@/components/SubPageShell";
 import { PAGE_COMPARISON, PAGE_DISCOVERY, PAGE_ULL, subPageMetadata } from "@/lib/pages";
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
 
 export const metadata: Metadata = subPageMetadata(PAGE_COMPARISON);
 
@@ -10,7 +11,7 @@ const columns = ["ULL (CZ)", "UL (PL)", "LAPL(A)", "PPL(A)"];
 const rows: { label: string; values: string[] }[] = [
   {
     label: "Kto wydaje",
-    values: ["LAA ČR / ÚCL", "ULC", "Urząd lotnictwa kraju EASA", "Urząd lotnictwa kraju EASA"],
+    values: ["LAA ČR / ÚCL", "ULC", "Krajowy urząd lotnictwa (EASA)", "Krajowy urząd lotnictwa (EASA)"],
   },
   {
     label: "Statki powietrzne",
@@ -23,11 +24,20 @@ const rows: { label: string; values: string[] }[] = [
   },
   {
     label: "Minimalny nalot",
-    values: ["20 godz.", "Wg przepisów krajowych", "30 godz. (w tym 6 solo)", "45 godz. (w tym 10 solo)"],
+    values: ["20 godz.", "28 godz.", "30 godz. (w tym 6 solo)", "45 godz. (w tym 10 solo)"],
   },
   {
     label: "Badania lekarskie",
-    values: ["Min. LAPL", "Wg przepisów krajowych", "LAPL", "Klasa 2"],
+    values: [MEDICAL_REQUIREMENT, MEDICAL_REQUIREMENT, "LAPL lub klasa 2", "Klasa 2"],
+  },
+  {
+    label: "Orientacyjna cena szkolenia",
+    values: [
+      "14 000 zł w RomanSky — bez VAT",
+      "ok. 15–28 tys. zł (często + 23% VAT)",
+      "ok. 25–38 tys. zł (często + 23% VAT)",
+      "ok. 35–48 tys. zł (często + 23% VAT)",
+    ],
   },
   {
     label: "Gdzie można latać",
@@ -103,9 +113,21 @@ export default function UllCzyPplPage() {
           </table>
         </div>
         <p className="text-sm mt-4">
-          Dane orientacyjne. Przepisy się zmieniają — przed rozpoczęciem
-          szkolenia sprawdź aktualne wymagania w organizacji szkolącej lub w
-          urzędzie lotnictwa.
+          Dane orientacyjne. Ceny pochodzą z cenników polskich szkół i
+          aeroklubów (2025–2026) i obejmują teorię oraz minimalny nalot — w
+          praktyce większość kursantów potrzebuje kilku dodatkowych godzin.
+          Badania lotniczo-lekarskie i opłaty egzaminacyjne są płatne
+          oddzielnie.
+        </p>
+        <p className="text-sm mt-4">
+          <strong>Zwróć uwagę na VAT.</strong> Wiele szkół podaje ceny netto,
+          do których dolicza się 23% VAT — przy kursie za 30 tys. zł to
+          dodatkowe ok. 7 tys. zł. Cena szkolenia ULL w RomanSky jest ceną
+          końcową, bez doliczania VAT.
+        </p>
+        <p className="text-sm mt-4">
+          Przepisy i ceny się zmieniają — przed rozpoczęciem szkolenia sprawdź
+          aktualne wymagania i cennik w wybranej organizacji szkolącej.
         </p>
       </section>
 
@@ -132,7 +154,8 @@ export default function UllCzyPplPage() {
           Polskie świadectwo kwalifikacji pilota statku powietrznego
           ultralekkiego, wydawane przez Urząd Lotnictwa Cywilnego. Uprawnia do
           tej samej kategorii samolotów co ULL, ale szkolenie i egzamin
-          odbywają się według przepisów krajowych.
+          odbywają się według przepisów krajowych. Wymaga co najmniej 28 godzin
+          lotów szkolnych i orzeczenia lotniczo-lekarskiego ({MEDICAL_REQUIREMENT}).
         </p>
       </section>
 

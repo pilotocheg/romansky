@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Plane, CheckCircle2, Rocket, ArrowRight } from "lucide-react";
 import { PAGE_COMPARISON, PAGE_DISCOVERY, PAGE_ULL } from "@/lib/pages";
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
 
 const details = [
   { label: "Minimalny wiek", value: "16 lat" },
   {
     label: "Badania lotniczo-lekarskie",
-    value: "Ważne orzeczenie do szkolenia UL",
+    value: `Orzeczenie: ${MEDICAL_REQUIREMENT}`,
   },
   { label: "Zaświadczenie", value: "O ukończeniu szkolenia lotniczego" },
   { label: "Cena szkolenia", value: "14 000 zł (teoria + praktyka)" },

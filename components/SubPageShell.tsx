@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import Nav from "@/components/Nav";
@@ -45,8 +46,17 @@ export default function SubPageShell({
       />
       <Nav />
       <main className="flex-1 pt-16">
-        <section className="bg-charcoal text-white">
-          <div className="max-w-3xl mx-auto px-6 py-16 md:py-20">
+        <section className="relative bg-charcoal text-white">
+          <Image
+            src="/images/hero-bg.jpeg"
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-linear-to-r from-charcoal/80 via-charcoal/65 to-charcoal/40 md:via-charcoal/50 md:to-transparent" />
+          <div className="relative z-10 max-w-3xl mx-auto px-6 py-16 md:py-24">
             <nav aria-label="Ścieżka" className="text-white/50 text-sm mb-8">
               <Link href="/" className="hover:text-white transition-colors">
                 Strona główna

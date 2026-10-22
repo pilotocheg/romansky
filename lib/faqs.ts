@@ -1,3 +1,5 @@
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
+
 export const faqs = [
   {
     q: "Czy potrzebuję wcześniejszego doświadczenia, żeby zacząć szkolenie lotnicze?",
@@ -9,7 +11,7 @@ export const faqs = [
   },
   {
     q: "Jakie badania lekarskie są wymagane do kursu pilota ultralight?",
-    a: "Do świadectwa kwalifikacji UL PPL wymagana jest co najmniej klasa 2 LAPL zgodnie z EASA. Okazujemy wsparcie w uzyskaniu takiego orzeczenia.",
+    a: `Wymagane jest orzeczenie lotniczo-lekarskie: ${MEDICAL_REQUIREMENT}. Pomagamy w uzyskaniu takiego orzeczenia.`,
   },
   {
     q: "Czy mogę wynająć samolot, posiadając licencję wydaną w innym kraju?",

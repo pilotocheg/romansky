@@ -17,7 +17,7 @@ const specs = [
   { icon: Users, label: "Miejsca", value: "2 (pilot i pasażer)" },
   {
     icon: OctagonAlert,
-    label: "Biezpieczeństwo",
+    label: "Bezpieczeństwo",
     value: "Ma wbudowany spadochron",
   },
   { icon: Clock, label: "Cena wynajmu", value: "400 zł / godz." },

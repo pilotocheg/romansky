@@ -25,7 +25,7 @@ export const PAGE_COMPARISON: SubPage = {
   label: "ULL, UL czy PPL?",
   title: "ULL, UL, LAPL czy PPL(A)? Porównanie licencji pilota",
   description:
-    "Czym różni się licencja ULL od polskiego świadectwa UL, LAPL(A) i PPL(A)? Wymagania, minimalny nalot i uprawnienia — porównanie, które pomoże wybrać kurs pilota.",
+    "Czym różni się licencja ULL od polskiego świadectwa UL, LAPL(A) i PPL(A)? Wymagania, minimalny nalot, uprawnienia i orientacyjne ceny — porównanie, które pomoże wybrać kurs pilota.",
   updated: "2026-10-22",
 };
 
