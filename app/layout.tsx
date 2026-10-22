@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
-import { SITE_KEYWORDS } from "@/lib/seo-keywords";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -24,7 +23,6 @@ export const metadata: Metadata = {
     template: SITE_TITLE_TEMPLATE,
   },
   description: SITE_DESCRIPTION,
-  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: "./",
   },

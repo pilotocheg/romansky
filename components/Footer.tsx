@@ -1,18 +1,20 @@
+import Link from "next/link";
 import { Plane } from "lucide-react";
+import { SUB_PAGES } from "@/lib/pages";
 
 const quickLinks = [
-  { label: "O nas", href: "#about" },
-  { label: "Szkolenie lotnicze", href: "#programs" },
-  { label: "Wynajem samolotu", href: "#fleet" },
-  { label: "Galeria", href: "#gallery" },
-  { label: "Kontakt", href: "#contact" },
+  { label: "O nas", href: "/#about" },
+  { label: "Szkolenie lotnicze", href: "/#programs" },
+  { label: "Wynajem samolotu", href: "/#fleet" },
+  { label: "Galeria", href: "/#gallery" },
+  { label: "Kontakt", href: "/#contact" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-white">
       <div className="max-w-[1200px] mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Plane className="text-brand-sky" size={20} />
@@ -61,6 +63,24 @@ export default function Footer() {
                   >
                     {l.label}
                   </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-sm uppercase tracking-widest mb-5 text-white/80">
+              Dowiedz się więcej
+            </h3>
+            <ul className="space-y-3">
+              {SUB_PAGES.map((p) => (
+                <li key={p.path}>
+                  <Link
+                    href={p.path}
+                    className="text-white/60 hover:text-white text-sm transition-colors"
+                  >
+                    {p.label}
+                  </Link>
                 </li>
               ))}
             </ul>

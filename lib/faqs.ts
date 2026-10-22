@@ -1,3 +1,5 @@
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
+
 export const faqs = [
   {
     q: "Czy potrzebuję wcześniejszego doświadczenia, żeby zacząć szkolenie lotnicze?",
@@ -9,7 +11,15 @@ export const faqs = [
   },
   {
     q: "Jakie badania lekarskie są wymagane do kursu pilota ultralight?",
-    a: "Do świadectwa kwalifikacji UL PPL wymagana jest co najmniej klasa 2 LAPL zgodnie z EASA. Okazujemy wsparcie w uzyskaniu takiego orzeczenia.",
+    a: `Wymagane jest orzeczenie lotniczo-lekarskie: ${MEDICAL_REQUIREMENT}. Pomagamy w uzyskaniu takiego orzeczenia.`,
+  },
+  {
+    q: "Jaki jest cennik szkolenia?",
+    a: "Szkolenie do licencji pilota ULL kosztuje 14 000 zł i obejmuje teorię oraz praktykę. Oddzielnie płatny jest egzamin pod nadzorem czeskiego instruktora (szacunkowo ok. 3000 zł) oraz badania lotniczo-lekarskie.",
+  },
+  {
+    q: "Jaki jest cennik wynajmu samolotu?",
+    a: "Wynajem samolotu Allegro 2000 kosztuje 400 zł za godzinę lotu. Oferujemy również pakiety 10-godzinne w cenie 3500 zł.",
   },
   {
     q: "Czy mogę wynająć samolot, posiadając licencję wydaną w innym kraju?",

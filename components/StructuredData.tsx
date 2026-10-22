@@ -1,4 +1,5 @@
 import { faqs } from "@/lib/faqs";
+import { PAGE_DISCOVERY, PAGE_ULL } from "@/lib/pages";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const BUSINESS_IMAGE = `${SITE_URL}/images/hero-bg.jpeg`;
@@ -56,6 +57,8 @@ export default function StructuredData() {
         ],
         knowsAbout: [
           "szkolenie lotnicze",
+          "kurs pilota",
+          "licencja pilota ULL",
           "pilot ultralight",
           "UL PPL",
           "szkolenie ultralajtem",
@@ -72,8 +75,8 @@ export default function StructuredData() {
               "@id": `${SITE_URL}/#offer-szkolenie`,
               name: "Szkolenie Lotnicze do Licencji ULL (program czeski)",
               description:
-                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin u inspektora czeskiego opłacany oddzielnie.",
-              url: `${SITE_URL}/#programs`,
+                "Kurs na czeską Licencję Pilota Samolotów Ultralekkich (ULL) według programu LAA ČR. Cena: 14 000 zł (teoria + praktyka). Egzamin pod nadzorem czeskiego instruktora (ok. 3000 zł) opłacany oddzielnie.",
+              url: `${SITE_URL}${PAGE_ULL.path}`,
               category: "Szkolenie lotnicze",
               price: "14000",
               priceCurrency: "PLN",
@@ -95,7 +98,7 @@ export default function StructuredData() {
               name: "Lot Zapoznawczy",
               description:
                 "30-minutowy lot próbny dla początkujących — idealne na prezent lub pierwszy krok do licencji pilota.",
-              url: `${SITE_URL}/#contact`,
+              url: `${SITE_URL}${PAGE_DISCOVERY.path}`,
             },
           ],
         },

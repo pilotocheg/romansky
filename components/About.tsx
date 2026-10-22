@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
+import { MEDICAL_REQUIREMENT } from "@/lib/site";
 
 const badges = ["Certyfikowany Instruktor Lotniczy", "Program czeski – LAA ČR"];
 
@@ -26,8 +27,8 @@ export default function About() {
             <p className="text-muted text-base leading-relaxed mb-4">
               Prowadzimy szkolenia do czeskiej Licencji Pilota Samolotów
               Ultralekkich (ULL) według programu LAA ČR. Przyjmujemy zupełnych
-              początkujących — wystarczy chęć latania i podstawowe orzeczenie
-              lotniczo-lekarskie.
+              początkujących — wystarczy chęć latania i orzeczenie
+              lotniczo-lekarskie ({MEDICAL_REQUIREMENT}).
             </p>
             <p className="text-muted text-base leading-relaxed mb-8">
               W ofercie mamy również szkolenia doskonalące i uzupełniające,
